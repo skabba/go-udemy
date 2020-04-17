@@ -57,8 +57,10 @@ func main() {
 	vin.contactInfo.email = "vin@gmail.com"
 	vin.contactInfo.zipCode = 96000
 
+	vin.print()
+
+	// Use structs with receiver function and pointer
 	vinPointer := &vin
-	fmt.Println(vinPointer)
 	vinPointer.updateName("Vinny")
 	vin.print()
 }
